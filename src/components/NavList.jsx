@@ -26,7 +26,7 @@ export default async function NavList({ navId }) {
       {navItems.map((navItem) => {
         const url = navItem?.externalUrl ? navItem.externalUrl : `/${navItem.page.slug}`
         return (
-          <li key={navItem.id}>
+          <li key={navItem.id} className='px-10'>
             <Link href={`${url}`}>{navItem.displayText}</Link>
           </li>
         )

@@ -18,7 +18,7 @@ export default function Layout({ children }) {
   return (
     <html lang="en">
       <body>
-        <div className="px-6 max-w-3xl mx-auto">
+        <div className="px-6 max-w-5xl mx-auto">
           <header className="py-10 relative">
             <nav className="relative flex items-center justify-between sm:h-10 ">
               <Link href="/" aria-label="Hygraph Next.js Blog Starter">
@@ -37,8 +37,10 @@ export default function Layout({ children }) {
                   className="h-10 sm:hidden"
                 />
               </Link>
-              <ul>
-                <NavList navId="main" />
+              <ul className="flex items-center justify-between">
+                <NavList
+                  navId="main"
+                />
               </ul>
             </nav>
           </header>
